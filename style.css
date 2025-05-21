@@ -4,12 +4,12 @@
 
 body {
   text-align: center;
-  background: #f3e8ff; /* soft lilac */
+  background: #f6f0ff;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
-  box-shadow: 3px 5px 15px rgba(109, 40, 217, 0.2); /* purple tint */
+  box-shadow: 0 8px 20px #4c1d951f, 0 4px 10px #0000000a;
   padding: 20px;
   border-radius: 20px;
   max-width: 600px;
@@ -39,12 +39,13 @@ h1 {
   flex-wrap: wrap;
   border-radius: 10px;
   color: #ffffff;
-  text-shadow: 2px 2px 4px #240046;
-  background: linear-gradient(90deg, #ffb67b 0%, #db1766 50%, #ffb67b 100%);
   padding: 20px;
   font-size: 35px;
   font-weight: bold;
-  box-shadow: 20px 30px 35px 3px rgba(109, 40, 217, 0.15);
+  text-shadow: 2px 2px 4px #240046;
+  background: linear-gradient(90deg, #fbbf24, #ec4899, #8b5cf6);
+  box-shadow: 0 10px 25px rgba(219, 23, 102, 0.25),
+    0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 button {
