@@ -66,7 +66,7 @@ h1 {
 button {
   font-family: "Raleway", sans-serif;
   font-size: 1.2rem;
-  padding: 12px 24px;
+  padding: 10px 30px;
   border-radius: 30px;
   border: 2px double #fff;
   color: #ffffff;
@@ -87,10 +87,54 @@ button:active {
   top: 2px;
 }
 
+footer {
+  padding: 12px 20px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(to top, #4b0082, #8e44ad);
+  box-shadow: 0 -2px 12px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+}
+
+footer a {
+  color: #ffd6ff;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #f0c0ff;
+}
+
+.github-icon {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+footer a:hover .github-icon {
+  transform: rotate(12deg) scale(1.1);
+}
+
 @media (max-width: 460px) {
   .container {
     padding: 20px;
     gap: 30px;
+  }
+
+  h1 {
+    font-size: 2rem;
   }
 
   #name-container {
@@ -100,5 +144,6 @@ button:active {
 
   button {
     width: 100%;
+    font-size: 1rem;
   }
 }
