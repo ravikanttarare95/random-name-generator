@@ -1,67 +1,81 @@
+const firstWords = [
+  "Crazy",
+  "Amazing",
+  "Shree",
+  "Om",
+  "Bharat",
+  "Raj",
+  "Desi",
+  "Swadeshi",
+  "New",
+  "Maa",
+  "Indian",
+  "Sai",
+  "Liberty",
+  "American",
+  "Sunny",
+  "Blue",
+  "North",
+  "Western",
+  "Golden",
+  "Urban",
+  "Modern",
+  "Classic",
+];
+
+const middleWords = [
+  "Fashion",
+  "Spice",
+  "Grocery",
+  "Textile",
+  "Mobile",
+  "Jewels",
+  "Apna",
+  "Furniture",
+  "Curry",
+  "Bazar",
+  "Tech",
+  "Pet",
+  "Home",
+  "Auto",
+  "Style",
+  "Food",
+  "Gear",
+  "Tire",
+  "Market",
+  "Coffee",
+];
+
+const lastWords = [
+  "Center",
+  "House",
+  "Hub",
+  "Store",
+  "Emporium",
+  "Palace",
+  "Point",
+  "Mart",
+  "Corner",
+  "Shop",
+  "Place",
+  "Warehouse",
+];
+
 function generateName() {
   let shopName = document.getElementById("name-container");
   let originalName = document.getElementById("original-name");
-  let p1 = document.getElementById("p-1");
-  let p2 = document.getElementById("p-2");
-  let p3 = document.getElementById("p-3");
-  // Adjectives:
-  let randomNum1 = Math.floor(Math.random() * 3) + 1;
-  console.log(`${randomNum1}`);
-  switch (randomNum1) {
-    case 1: {
-      p1.innerText = `Crazy`;
-      break;
-    }
+  let firstName = document.getElementById("p-1");
+  let MiddleName = document.getElementById("p-2");
+  let lastName = document.getElementById("p-3");
 
-    case 2: {
-      p1.innerText = `Amazing`;
-      break;
-    }
+  // FirstName:
+  let randomNum1 = Math.floor(Math.random() * firstWords.length);
 
-    case 3: {
-      p1.innerText = `Fire`;
-      break;
-    }
-  }
+  // MiddleName:
+  let randomNum2 = Math.floor(Math.random() * middleWords.length);
 
-  // Shop Name:
-  let randomNum2 = Math.floor(Math.random() * 3) + 1;
-  console.log(`${randomNum2}`);
-  switch (randomNum2) {
-    case 1: {
-      p2.innerText = `Engine`;
-      break;
-    }
+  // LastName:
+  let randomNum3 = Math.floor(Math.random() * lastWords.length);
 
-    case 2: {
-      p2.innerText = `Food`;
-      break;
-    }
-
-    case 3: {
-      p2.innerText = `Garments`;
-      break;
-    }
-  }
-
-  // Another Name:
-  let randomNum3 = Math.floor(Math.random() * 3) + 1;
-  console.log(`${randomNum3}`);
-  switch (randomNum3) {
-    case 1: {
-      p3.innerText = `Bros`;
-      break;
-    }
-
-    case 2: {
-      p3.innerText = `Limited`;
-      break;
-    }
-
-    case 3: {
-      p3.innerText = `Hub`;
-      break;
-    }
-  }
-  originalName.style.display = "none";
+  shopName.innerText = `${firstWords[randomNum1]} ${middleWords[randomNum2]} ${lastWords[randomNum3]}`;
 }
